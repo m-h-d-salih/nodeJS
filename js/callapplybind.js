@@ -4,6 +4,7 @@ function greet(greeting){
 }
 
 const person={name:'salih'}
+
 greet.call(person,"hello");
 
 //apply
