@@ -79,6 +79,9 @@ Promise.resolve().then(()=>{
 setTimeout(()=>{
     console.log(`third`)
 },0)
+setImmediate(()=>
+    console.log(`Inside immediate`)
+)
 console.log('end')
 //expected output
 // start
@@ -86,5 +89,6 @@ console.log('end')
 // promise
 // secomd
 // third
+// Inside immediate
 // inside promise settimeout
 // first
