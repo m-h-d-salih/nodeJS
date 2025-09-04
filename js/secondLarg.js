@@ -18,3 +18,16 @@ for(let i=arr.length-1;i>0;i--){
     }
 
 console.log(second)
+//
+const arra=[5,4,2,5,3,1];
+let firstLargest=arra[0];
+let secondLargest=0;
+for (let i=1;i<arra.length;i++){
+    if(firstLargest<arra[i]){
+        secondLargest=firstLargest;
+        firstLargest=arra[i]
+    }else if(secondLargest<arra[i] && firstLargest!==arra[i]){
+        secondLargest=arra[i];
+    }
+}
+console.log(secondLargest)
